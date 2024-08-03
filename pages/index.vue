@@ -8,11 +8,16 @@
 				<MysteryBoxForm />
 			</section>
 		</section>
+
+		<section>
+			<TopTenBoxes/>
+		</section>
 	</main>
 </template>
 
 <script>
 import ImageCarousel from '../components/ImageCarousel'
 import MysteryBoxForm from '~/components/MysteryBoxForm.vue'
+import TopTenBoxes from '~/components/TopTenBoxes.vue';
 export default {}
 </script>
