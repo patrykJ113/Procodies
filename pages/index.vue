@@ -34,7 +34,14 @@
 		</section>
 
 		<section>
-			
+			<Columns/>
+		</section>
+
+		<section>
+			<h2 class="text-center text-base mb-1">We accept the following credit cards</h2>
+			<div class="flex justify-center mb-4 h-10">
+				<NuxtImg class="w-full" src="cards 1.png"/>
+			</div>
 		</section>
 	</main>
 </template>
@@ -44,5 +51,6 @@ import ImageCarousel from '../components/ImageCarousel'
 import MysteryBoxForm from '~/components/MysteryBoxForm.vue'
 import TopTenBoxes from '~/components/TopTenBoxes.vue'
 import CuriousAbout from '~/components/CuriousAbout.vue'
+import Columns from '~/components/Columns.vue'
 export default {}
 </script>
