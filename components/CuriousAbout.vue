@@ -1,25 +1,49 @@
 <template>
-	<div class="grid grid-cols-4 gap-8 mx-[18px]">
+	<div class="grid grid-cols-4 gap-8 mx-[18px] mb-12">
 		<NuxtImg
-			class="col-start-1 col-span-2"
-			src="stock.png"
+			v-if="left"
+			class="col-start-1 col-span-2 w-full"
+			:src="imgSrc"
 		/>
-		<div class="col-start-3 col-span-2 flex flex-col justify-center">
-			<h2 class="text-[42px] font-bold">Curious about the StockX Mystery Box?</h2>
+		<div 
+		class="flex flex-col justify-center"
+		:class="left ? 'col-start-3 col-span-2 ' : 'col-start-1 col-span-2'"
+		>
+			<h2 class="text-[42px] font-bold">{{ title }}</h2>
 			<p>
-				Experience the thrill of unboxing cutting-edge gadgets with Stockx
-				Mystery Boxes. Each box is a treasure trove of high-quality electronics,
-				handpicked to elevate your tech game.
+				{{ firstParagraph }}
 			</p>
-			<p>
-				Expect the unexpected! Our boxes are packed with the latest gadgets,
-				from smartphones to gaming consoles, ensuring you get the best tech
-				surprises every time.
-			</p>
+			<p>{{ secondParagraph }}</p>
 		</div>
+		<NuxtImg
+			v-if="!left"
+			class="col-start-3 col-span-2 w-full"
+			:src="imgSrc"
+		/>
 	</div>
 </template>
 
-<script>
-export default {}
+<script setup lang="ts">
+const props = defineProps({
+	left: {
+		type: Boolean,
+		required: true,
+	},
+	title: {
+		type: String,
+		required: true,
+	},
+	firstParagraph: {
+		type: String,
+		required: true,
+	},
+	secondParagraph: {
+		type: String,
+		required: false,
+	},
+	imgSrc: {
+		type: String,
+		required: false,
+	},
+})
 </script>
