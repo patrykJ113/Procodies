@@ -2,12 +2,16 @@
 	<div class="grid grid-cols-4 gap-8 mx-[18px] mb-12">
 		<NuxtImg
 			v-if="left"
-			class="col-start-1 col-span-2 w-full"
+			class="col-start-1 col-span-4 md:col-span-2 w-full"
 			:src="imgSrc"
 		/>
-		<div 
-		class="flex flex-col justify-center"
-		:class="left ? 'col-start-3 col-span-2 ' : 'col-start-1 col-span-2'"
+		<div
+			class="flex flex-col justify-center"
+			:class="
+				left
+					? 'col-start-1 col-span-4 md:col-start-3 md:col-span-2 '
+					: 'col-start-1 col-span-4 md:col-start-1 md:col-span-2'
+			"
 		>
 			<h2 class="text-[42px] font-bold">{{ title }}</h2>
 			<p>
@@ -17,7 +21,7 @@
 		</div>
 		<NuxtImg
 			v-if="!left"
-			class="col-start-3 col-span-2 w-full"
+			class="col-start-1 col-span-4 md:col-start-3 md:col-span-2 w-full"
 			:src="imgSrc"
 		/>
 	</div>

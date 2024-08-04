@@ -1,8 +1,8 @@
 <template>
-	<div class="bg-[#F5F5F5] flex py-6 px-4 mb-4">
-        <div v-for="d in data" class="mr-8">
-            <h2 class="text-base font-semibold">{{ d.title }}</h2>
-            <p class="text-[12px]">{{ d.description }}</p>
+	<div class="bg-[#F5F5F5] md:flex py-6 px-4 mb-4">
+        <div v-for="d in data" class="mr-8 mb-4 md:mb-0">
+            <h2 class="text-xl md:text-base  font-semibold">{{ d.title }}</h2>
+            <p class="text-[14px] mb:text-[12px]">{{ d.description }}</p>
         </div>
     </div>
 </template>
