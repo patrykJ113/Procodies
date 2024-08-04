@@ -14,12 +14,12 @@
 		</h2>
 		<div class="grid grid-cols-12 gap-y-4 my-6">
 			<input
-				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-6 mr-4 focus:placeholder-black"
+				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-12 sm:col-span-6 mr-4 focus:placeholder-black"
 				type="text"
 				placeholder="Last name"
 			/>
 			<input
-				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-7 col-span-6 focus:placeholder-black"
+				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-12 sm:col-start-7 sm:col-span-6 focus:placeholder-black"
 				type="text"
 				placeholder="First name"
 			/>
@@ -29,12 +29,12 @@
 				placeholder="Streat"
 			/>
 			<input
-				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-6 mr-4 focus:placeholder-black"
+				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-12 sm:col-start-1 sm:col-span-6 mr-4 focus:placeholder-black"
 				type="text"
 				placeholder="Postal code"
 			/>
 			<input
-				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-7 col-span-6 focus:placeholder-black"
+				class="border rounded-[10px] border-[#808080] px-4 py-3 col-start-1 col-span-12 sm:col-start-7 sm:col-span-6 focus:placeholder-black"
 				type="text"
 				placeholder="City"
 			/>
