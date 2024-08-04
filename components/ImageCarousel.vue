@@ -1,7 +1,7 @@
 <template>
-	<div class="mt-[61px] w-full xl:w-[85%]">
+	<div class="mt-[45px] w-full h-full">
 		<NuxtImg
-			class="w-full xl:w-full"
+			class="w-full xl:w-full h-[70%] xl:h-[60%] 2xl:h-[55%] object-contain"
 			:src="imgSrc"
 		/>
 		<div class="flex justify-between mt-4">

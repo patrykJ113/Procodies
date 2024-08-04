@@ -1,10 +1,20 @@
 <template>
 	<main>
 		<section class="grid grid-cols-12 gap-2 ml-7 mb-12">
-			<section class="col-start-1 col-span-12 md:col-span-6">
+			<section class="col-start-1 col-span-12 md:col-span-6 h-[95%]">
 				<ImageCarousel />
+				<!-- <div class="mt-[61px] h-[80%] border border-solid border-black">
+					<div class="bg-[url('box1.png')] bg-cover bg-center h-[80%]"></div>
+					<div class="h-[20%] flex justify-between">
+						<div class="bg-[url('box1.png')] bg-cover bg-center h-full w-[25%]"></div>
+						<div class="bg-[url('box1.png')] bg-cover bg-center h-full w-[25%]"></div>
+						<div class="bg-[url('box1.png')] bg-cover bg-center h-full w-[25%]"></div>
+					</div>
+				</div> -->
 			</section>
-			<section class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 pr-4">
+			<section
+				class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 pr-4"
+			>
 				<MysteryBoxForm />
 			</section>
 		</section>
@@ -34,13 +44,18 @@
 		</section>
 
 		<section>
-			<Columns/>
+			<Columns />
 		</section>
 
 		<section>
-			<h2 class="text-center text-base mb-1">We accept the following credit cards</h2>
+			<h2 class="text-center text-base mb-1">
+				We accept the following credit cards
+			</h2>
 			<div class="flex justify-center mb-4 h-10">
-				<NuxtImg class="w-full" src="cards 1.png"/>
+				<NuxtImg
+					class="w-full"
+					src="cards 1.png"
+				/>
 			</div>
 		</section>
 	</main>
